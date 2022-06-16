@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-size: 15px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 700px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.sedan, .suvs, .luxury {
+    width: 33,3%;
+    height: 100%;
+    padding: 20px;
+}
+
+.sedan {
+    border: 2px solid hsl(31, 77%, 52%);
+    border-radius: 15px 0 0 15px;
+}
+
+.suvs {
+    border-top: 2px solid hsl(184, 100%, 22%);
+    border-right: 2px solid hsl(184, 100%, 22%);
+    border-bottom: 2px solid hsl(184, 100%, 22%);
+}
+
+.luxury {
+    border-top: 2px solid hsl(179, 100%, 13%);
+    border-right: 2px solid hsl(179, 100%, 13%);
+    border-bottom: 2px solid hsl(179, 100%, 13%);
+    border-radius: 0 15px 15px 0;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.logo img {
+    height: 35px;
+}
+
+.title {
+    margin-bottom: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+.text {
+    margin-bottom: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.4;
+    color: white;
+}
+
+.btn {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.btn .learnMore {
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.btn .learnMore:hover {
+    border: none;
+    color: black;
+    background-color: white;
+    box-shadow: none;
+}
+
+
+@media screen and (max-width: 726px) {
+
+    body {
+        height: 100%;
+        margin: 40px 0;
+    }
+
+    .card {
+        width: 350px;
+        height: 840px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+    }
+
+    .sedan, .suvs, .luxury {
+        width: 100%;
+        height: 280px;
+    }
+
+    .sedan {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .sedan .text {
+        margin-bottom: 30px;
+    }
+
+    .suvs {
+        border-radius: 0;
+        border: 2px solid hsl(184, 100%, 22%) ;
+    }
+
+    .luxury {
+        border-radius: 0 0 15px 15px;
+        border: 2px solid hsl(179, 100%, 13%);
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    .title h2 {
+        font-size: 20px;
+    }
+
+    .text {
+        margin-bottom: 10px;
+    }
+
+
+}
+
+
+
+
+
